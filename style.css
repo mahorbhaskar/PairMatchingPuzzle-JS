@@ -1,0 +1,139 @@
+/* Variabes */
+/* Mixin's */
+body {
+  background: #1f373d;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+  color: #f8b4b4;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens {
+  font-size: 2em;
+  color: white;
+}
+
+button {
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #1f373d;
+  color: #f8b4b4;
+  border: solid 1px #f8b4b4;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #f8b4b4;
+  border: solid 1px #f8b4b4;
+  color: #1f373d;
+}
+
+#container {
+  width: 630px;
+  margin: 10px auto;
+}
+
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[data-view="card"] {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  width: 100px;
+  height: 140px;
+  border: solid 1px #d3cece;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f3f3f3 22px, #f8b4b4 22px, #f8b4b4 24px, transparent 24px, transparent 67px, #f8b4b4 67px, #f8b4b4 69px, transparent 69px), linear-gradient(225deg, #f3f3f3 22px, #f8b4b4 22px, #f8b4b4 24px, transparent 24px, transparent 67px, #f8b4b4 67px, #f8b4b4 69px, transparent 69px) 0 64px;
+  background-color: #f3f3f3;
+  background-size: 64px 128px;
+}
+
+.flipped {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.reverse {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.correct {
+  opacity: .5;
+  cursor: default;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+/* Icons */
+.correct[data-item="sass"],
+.flipped[data-item="sass"] {
+  background: url("https://cathydutton.co.uk/images/tech/sass.jpg") left center no-repeat #f8b4b4;
+  background-size: contain;
+}
+
+.correct[data-item="gulp"],
+.flipped[data-item="gulp"] {
+  background: url("https://cathydutton.co.uk/images/tech/gulp.jpg") left center no-repeat #f8b4b4;
+  background-size: contain;
+}
+
+.correct[data-item="grunt"],
+.flipped[data-item="grunt"] {
+  background: url("https://cathydutton.co.uk/images/tech/grunt.jpg") left center no-repeat #f8b4b4;
+  background-size: contain;
+}
+
+.correct[data-item="git"],
+.flipped[data-item="git"] {
+  background: url("https://cathydutton.co.uk/images/tech/git.jpg") left center no-repeat #f8b4b4;
+  background-size: contain;
+}
+
+.correct[data-item="css"],
+.flipped[data-item="css"] {
+  background: url("https://cathydutton.co.uk/images/tech/css.jpg") left center no-repeat #f8b4b4;
+  background-size: contain;
+}
+/*# sourceMappingURL=style.css.map */
